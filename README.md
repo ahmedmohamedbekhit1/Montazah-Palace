@@ -16,7 +16,7 @@
 
 ## Getting Started
 1. Clone the repository to your local machine using `git clone https://github.com/ahmedmohamedbekhit1/Montazah-Palace.git`.
-2. Open the `index.html` file in your web browser to start exploring the website.
+2. Open the `place.html` file in your web browser to start exploring the website.
 
 ## Contributing
 - We welcome contributions to enhance and expand the content and features of the Montazah Palace Website.
