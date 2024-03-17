@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>قصر المنتزة</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body dir="rtl">
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="#" title="قصر المنتزة">
+                    <img src="p.png" alt="قصر المنتزة" />
+                </a>
+                قصر المنتزة
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">حول</a></li>
+                    <li><a href="#facilities">المرافق</a></li>
+                    <li><a href="#events">الفعاليات</a></li>
+                    <li><a href="#visit">زيارتنا</a></li>
+                    <li><a href="media.html">معرض الوسائط</a></li>
+
+
+                    <li>
+                        <form class="searchbar">
+                            <input class="searchbar" type="search" id="searchPage" placeholder="البحث عن شيء آخر">
+                            <img src="icons8-search.svg" alt="بحث" type="submit" class="searchbox"></img>
+                        </form>
+                    </li>
+                    <li>
+                        <div class="cta-container">
+                            <a href="#" class="cta-button" title="تسجيل الدخول">تسجيل الدخول</a>
+                            <a href="#" class="cta-button" title="تسجيل">انشاء حساب</a>
+                        </div>
+                    </li>
+                    <li> <label class="switch" id="languageSwitch">
+                            <input class="cb" type="checkbox" id="languageCheckbox" />
+                            <span class="toggle">
+                                <span class="right">en</a></span>
+                                <span class="left">ar</a></span>
+                            </span>
+                        </label></li>
+                    <script>// Get the language switch elements
+                        const languageSwitch = document.getElementById('languageSwitch');
+                        const languageCheckbox = document.getElementById('languageCheckbox');
+                        const currentUrl = window.location.href;
+                        // Add event listener for language switch change
+                        languageCheckbox.addEventListener('change', function () {
+                            if (this.checked) {
+                                window.location.href = currentUrl.replace("index_ar.html", "Place.html");
+                            } else {
+                                // Switch back to English
+                                window.location.href = currentUrl.replace("Place.html", "index_ar.html");
+                            }
+                        });
+                    </script>
+
+                </ul>
+            </nav>
+
+        </div>
+        <button id="drawerToggle" class="drawer-button">☰</button>
+    </header>
+    <div id="drawer" class="drawer">
+
+        <form class="searchbar">
+            <input class="searchbar" type="search" id="searchPage" placeholder="البحث عن شيء آخر">
+            <img src="icons8-search.svg" alt="بحث" type="submit" class="searchbox"></img>
+        </form>
+
+        <a href="#about">حول</a><br>
+        <a href="#facilities">المرافق</a><br>
+        <a href="#events">الفعاليات</a><br>
+        <a href="#visit">زيارتنا</a><br>
+        <a href="media.html">معرض الوسائط</a><br>
+
+
+
+        <div class="cta-container">
+            <a href="#" class="cta-button" title="تسجيل الدخول">تسجيل الدخول</a>
+            <a href="#" class="cta-button" title="تسجيل">انشاء حساب</a>
+        </div>
+        <br>
+        <label class="switch" id="languageSwitch2">
+            <input class="cb" type="checkbox" id="languageCheckbox2" />
+            <span class="toggle">
+                <span class="right">en</a></span>
+                <span class="left">ar</a></span>
+            </span>
+        </label>
+        <script>// Get the language switch elements
+            const languageSwitch2 = document.getElementById('languageSwitch2');
+            const languageCheckbox2 = document.getElementById('languageCheckbox2');
+            const currentUrl2 = window.location.href;
+            // Add event listener for language switch change
+            languageCheckbox2.addEventListener('change', function () {
+                if (this.checked) {
+                    window.location.href = currentUrl2.replace("index_ar.html", "Place.html");
+                } else {
+                    // Switch back to English
+                    window.location.href = currentUrl2.replace("Place.html", "index_ar.html");
+                }
+            });
+        </script>
+    </div>
+
+    <script>document.getElementById('drawerToggle').addEventListener('click', function () {
+            document.getElementById('drawer').classList.toggle('open');
+        });
+
+    </script>
+    <section>
+        <div class="top">
+            <img src="149163.avif" id="visited" alt="أكثر الأماكن زيارة في المنتزة">
+            <br>
+            <div class="review">
+                <b> <label for="visited">برج الساعة</label></b>
+                <br>
+                <label for="visited">يقع في وسط حدائق المنتزة في الإسكندرية، مصر. إنه أحد المعالم البارزة في المنطقة.
+                    تعود
+                    بناء هذا البرج إلى العصر الملكي في مصر ويعتبر رمزاً للتراث والثقافة المصرية.</label>
+                <label for="visited">تشتهر حدائق المنتزة، المحيطة ببرج الساعة، بأجوائها الهادئة والجميلة. تتميز بالخضرة
+                    الندية والمناظر الطبيعية الخلابة، مما يجعلها وجهة شهيرة للعائلات والزوار الذين يرغبون في الاستمتاع
+                    بالهواء النقي والمناظر الخلابة.</label>
+                <br> <br><button class="ShowMore-button" onclick=""><b>عرض المزيد</b></button>
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+        <div class="Page">
+            <aside>
+                <section>
+                    <div class="PageLeft">
+                        <div class="container">
+                            <h2> القصص الرائجة</h2>
+                            <iframe 
+                            src="https://www.youtube-nocookie.com/embed/elJfzl2kCSA?si=WGlCvIZ7TcUyUp1W"
+                            title="YouTube video player" frameborder="0"
+                            height="500" width="100% allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                            <u>
+                                <h3>إعادة بناء القصر</h3>
+                            </u>
+                            <label><b>نظرة عامة: إعادة بناء قصر المنتزة </b>
+
+                                يوجد قصر المنتزة، الذي يعتبر جوهرة معمارية ممتدة على شواطئ الإسكندرية، مصر، على الساحل
+                                الهادئ
+                                للإسكندرية. يعبر القصر عن التاريخ الغني والتراث الثقافي للمنطقة. تم تكليفه أصلاً
+                                من قبل
+                                الخديوي عباس الثاني في أواخر القرن التاسع عشر كملاذ صيفي للعائلة الملكية المصرية، وقد
+                                مر بالتعرض
+                                للإهمال والتدهور في السنوات الأخيرة. وبالإشارة إلى أهميته كمعلم تاريخي، تم بدء مشروع
+                                ترميم شامل
+                                لإعادة إحياء قصر المنتزة إلى مجده السابق.
+
+                                شهد المشروع اتباع نهج متعدد التخصصات، يشمل المعماريين والمؤرخين وخبراء الحفظ والصناع.
+                                بدأ
+                                المشروع بتقييم شامل لسلامة الهيكل الإنشائي للقصر وأهميته التاريخية. وصيغت خطط مفصلة
+                                لمعالجة
+                                جوانب مختلفة من عملية الترميم، بما في ذلك الحفاظ على الهندسة المعمارية وتصميم المناظر
+                                الطبيعية
+                                والحفاظ على الأعمال الفنية والآثار التي تحويها القصر.
+
+                                وقد واجهت الحفاظ على أصالة عناصر الهندسة المعمارية لقصر المنتزة بينما يتم دمج وسائل
+                                الراحة
+                                الحديثة تحديًا كبيرًا خلال عملية الترميم. بذلت جهود للحفاظ على سمات القصر الأصلية، مثل
+                                الواجهات
+                                المزخرفة والنقوش الخشبية المعقدة والبلاط الزخرفي، مع دمج الممارسات المستدامة وتقنيات
+                                الحفظ
+                                الحديثة.
+
+                                نتائج مشروع الترميم مبهرة. تم إحياء قصر المنتزة، الذي كان مهملاً ومهملاً في السابق،
+                                بعناية
+                                فائقة،
+                                مع مناطق داخلية نابضة بالحياة وحدائق خضراء ندية تقدم للزوار لمحة عن ماضيها الزاخر. وراء
+                                أهميتها
+                                المعمارية، تحمل إعادة إحياء قصر المنتزة آثاراً ثقافية واقتصادية أوسع لمصر، مما يؤكد
+                                التزام
+                                البلاد بحفظ تراثها وتعزيز السياحة كمحرك للنمو الاقتصادي.
+
+                                في الختام، يعد إعادة بناء قصر المنتزة دليلاً على قوة الحفظ والتراث الثقافي الدائم لتاريخ
+                                مصر.
+                                من خلال التخطيط والتعاون الدقيقين، تم تحويل قصر المنتزة إلى رمز حي لماضي مصر ومستقبلها،
+                                ملهمًا
+                                الأجيال القادمة لتقدير وحماية تراثها.</label>
+                            <br><br><br><img src="montazah-palace-gardens.jpg" width="100%" height="500" alt="قصر المنتزة">
+                        </div>
+
+                        <div class="container">
+                            <u>
+                                <h3>إحياء قصر المنتزة</h3>
+                            </u>
+                            <img src="149239.avif" width="100%" height="500" alt="قصر المنتزة">
+                            <label>في قلب الإسكندرية، مصر، يقف شاهداً على تاريخ البلاد الغني والتراث الثقافي—قصر
+                                المنتزة
+                                الأيقوني. كان قصر المنتزة، الذي كان في السابق ملجأ صيفيًا محبوبًا للعائلة الملكية
+                                المصرية،
+                                قد تعرض لأضرار الزمن، وتلاشى في الأعوام الأخيرة. ومع ذلك، في السنوات الأخيرة، شهدت
+                                عملية
+                                تحول رائعة، تحدث صفحة جديدة في تاريخ القصر.
+
+                                بعنوان "إحياء قصر المنتزة: انتصار للحفظ التراثي"، يستكشف هذا المقال رحلة قصر
+                                المنتزة
+                                المدهشة من الإهمال إلى التجديد.
+
+                                في صدارة هذا التحول يقف مشروع ترميم طموح يسعى إلى إعادة الحياة إلى قاعات القصر
+                                الفخمة
+                                وحدائقه الخضراء. يقوده فريق من المهندسين المخلصين والمؤرخين وخبراء الحفظ، وهو عبارة
+                                عن
+                                دليل على قوة التعاون والعزيمة.
+
+                                بدأت جهود الترميم بتقييم دقيق لسلامة هيكل قصر المنتزة وأهميته التاريخية. صُيغت
+                                خطط
+                                مفصلة للحفاظ على عجائب هندسة القصر بينما تم دمج وسائل الراحة الحديثة والممارسات
+                                المستدامة.
+                                من استعادة النقوش البلاطية الدقيقة إلى إحياء المناظر الطبيعية الندية، لم يُدَع شيء في
+                                مهمة
+                                إعادة إحياء قصر المنتزة إلى مجده السابق.
+
+                                إعادة فتح قصر المنتزة تمثل مرحلة هامة في المشهد الثقافي المصري. يُرحب الزوار من جميع
+                                أنحاء
+                                العالم مرة أخرى بزيارة قاعات القصر الفخمة، والانغماس في تاريخها الغني، والتجول في
+                                حدائقها
+                                الخلابة.
+
+                                بالإضافة إلى أهميتها المعمارية، يشكل قصر المنتزة مصدرًا للأمل في المستقبل. خلق مشروع
+                                الترميم
+                                فرص عمل للمجتمعات المحلية وأشعل شعورًا جديدًا بالفخر والملكية بين السكان. وما زالت
+                                تحولات
+                                القصر إلى مركز ثقافي نابض بالحياة تعد بتثري حياة الأجيال القادمة.
+
+                                مع انطلاق قصر المنتزة في فصله القادم، فإن إرث هذا الصرح التاريخي ما زال مستمرًا في
+                                الإلهام.
+                                من خلال قاعاته المتألقة وسحره الخالد، يقف قصر المنتزة كشاهد على تراث مصر الدائم وقوة
+                                الحفظ.
+
+                                وفي الختام، فإن إحياء قصر المنتزة ليس مجرد مشروع للترميم—بل هو انتصار للحفاظ
+                                التراثي.
+                                ومع وصول الزوار من مختلف أنحاء العالم إلى أبوابه، يقف قصر المنتزة كشاهد حي على تاريخ
+                                مصر
+                                الغني والتراث الثقافي، داعيًا الجميع لتجربة جماله الخالد وأهميته التاريخية.
+
+
+
+
+
+                            </label>
+                        </div>
+                        <div class="container">
+                            <div class="container3">
+                                <h2>خريطة الموقع</h2>
+                            </div>
+                            <p>للوصول إلى قصر المنتزة، استخدم الخريطة التفاعلية أدناه:</p>
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d109104.55796020417!2d30.015250599999998!3d31.289440799999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5d05ef533eccb%3A0xae82154762ef9858!2z2YLYtdixINin2YTZhdmG2KrYstip!5e0!3m2!1sar!2seg!4v1710143110570!5m2!1sar!2seg"
+                           height="500" width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+
+            <div class="PageRight">
+
+                <section>
+                    <div class="container">
+                        <div class="container3">
+                            <h2>تاريخ قصر المنتزة</h2>
+                        </div>
+                        <p>تم بناء قصر المنتزة في عام 1892 من قبل الملك عباس الثاني ككوخ صيد وملجأ صيفي. يقع في
+                            حي
+                            المنتزة بالإسكندرية، مصر، مطل على البحر الأبيض المتوسط.</p>
+                        <p>يحيط القصر بحديقة كبيرة، كانت في الأصل مصممة كحديقة خاصة للعائلة الملكية. اليوم، فإن
+                            الحديقة
+                            مفتوحة للجمهور وتحتوي على مجموعة متنوعة من الحدائق والنافورات ومسارات المشي.</p>
+                        <img src="MONTAZA_GARDENS_AND_PARK,_ALEXANDRIA,_EGYPT.jpg" alt="قصر المنتزة">
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="container3">
+                            <h2>الهندسة المعمارية</h2>
+                        </div>
+                        <p>يعد قصر المنتزة مزيجًا من الأنماط المعمارية الإسلامية والعثمانية والأوروبية. يتكون القصر
+                            من
+                            عدة مبانٍ، بما في ذلك القصر الرئيسي، وجامع، وبرج الساعة، وعدة منازل للضيوف.</p>
+                        <p>يتميز القصر الرئيسي بقبة كبيرة وعدة قبب صغيرة، بالإضافة إلى واجهات مزخرفة وعناصر
+                            ديكورية.
+                            والداخلية للقصر مثل الأعمدة الرخامية والفسيفساء الدقيقة والسقوف المذهبة.</p>
+                        <img src="MONTAZA_GARDENS_AND_PARK,_ALEXANDRIA,_EGYPT2.jpg" alt="قصر المنتزة الداخلية">
+                    </div>
+                </section>
+                <section>
+
+                    <div class="container">
+                        <div class="container3">
+                            <h2>معرض الصور</h2>
+                        </div>
+                        <p>فيما يلي بعض الصور لقصر المنتزة ومحيطه:</p>
+                        <div class="gallery">
+                            <section>
+                                <div class="container3">
+                                    <h2>حديقة قصر المنتزة</h2>
+                                </div>
+                                <img src="149177.avif" alt="حديقة قصر المنتزة">
+                            </section>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <section>
+                            <div class="container3">
+                                <h2>شاطئ قصر المنتزة</h2>
+                            </div>
+                            <img src="149168.avif" alt="Montaza Palace beach">
+                        </section>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>الشركة </h4>
+                    <ul>
+                        <li><a href="#">عن الموقع</a></li>
+                        <li><a href="#">خدماتنا</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>احصل علي المساعدة</h4>
+                    <ul>
+                        <li><a href="#">الشكاوي</a></li>
+                        <li><a href="#">حالة الطلب</a></li>
+                        <li><a href="#">خطوات الدفع</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ss">
+                <p>&copy; Created by [Ahmed Mohamed Bekhit] | IDs: [2205136]</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

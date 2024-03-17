@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style_form_ui.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Montaza Palace - Events</title>
+</head>
+
+<body>
+    <div id="overlay" class="custom-overlay">
+        <div id="dialog" class="custom-dialog"></div>
+    </div>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="Place.html" title="Montaza Palace">
+                    <img src="p.png" alt="Montaza Palace" />
+                </a>
+                Montaza Palace
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="Place.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Virtual Tours</a></li>
+                    <li><a href="visit.html">Visit Us</a></li>
+                    <li><a href="media.html">Media Gallery</a></li>
+                    <li>
+                        <form class="searchbar">
+                            <input class="searchbar" type="search" id="searchPage" placeholder="Search for other">
+                            <img src="icons8-search.svg" alt="Search" type="submit" class="searchbox"></img>
+                        </form>
+                    </li>
+                    <li>
+                        <div class="cta-container">
+                            <script src="login.js"></script>
+                            <a onclick="showLoginForm()" class="cta-button" title="Login">Login</a>
+                            <a onclick="showRegisterForm()" class="cta-button" title="regisrter">Register</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <button id="drawerToggle" class="drawer-button">☰</button>
+    </header>
+    <div id="drawer" class="drawer">
+        <form class="searchbar">
+            <input class="searchbar" type="search" id="searchPage" placeholder="Search for other">
+            <img src="icons8-search.svg" alt="Search" type="submit" class="searchbox"></img>
+        </form>
+        <a href="Place.html">Home</a><br>
+        <a href="about.html">About</a><br>
+        <a href="events.html">Virtual Tours</a><br>
+        <a href="visit.html">Visit Us</a><br>
+        <a href="media.html">Media Gallery</a><br>
+        <div class="cta-container">
+            <script src="login.js"></script>
+            <a onclick="showLoginForm()" class="cta-button" title="Login">Login</a>
+            <a onclick="showRegisterForm()" class="cta-button" title="regisrter">Register</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('drawerToggle').addEventListener('click', function () {
+            document.getElementById('drawer').classList.toggle('open');
+        });
+    </script>
+
+    <section>
+        <div class="Topbar">
+            <div class="textbar">
+                <span>Virtual Tours</span><br>
+                <span><u>Home - Virtual Tours </u></span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section>
+            <div class="section-content">
+                <div class="section-text">
+                    
+                    
+                   
+                </div>
+                <div class="section-image">
+                  
+                  </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="events.html">Virtual Tours</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ss">
+                <p>&copy; Created by [Ahmed Mohamed Bekhit] | IDs: [2205136]</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
