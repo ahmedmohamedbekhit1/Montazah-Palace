@@ -17,7 +17,7 @@ function showLoginForm() {
     const loginFormContent = `
     <div class="custom-container">
         <div class="custom-heading">Sign In</div>
-        <form action="" class="custom-form">
+        <form action="login.php"  method="POST" class="custom-form">
             <input required class="custom-input" type="email" name="email" id="email" placeholder="E-mail">
             <input required class="custom-input" type="password" name="password" id="password" placeholder="Password">
             <div class="checkbox-wrapper-65">
@@ -31,11 +31,8 @@ function showLoginForm() {
     <span>Remeber me</span>
   </label>
 </div>
-
-
-
-            <span class="forgot-password"><a onclick="showForgotPasswordForm()">Forgot Password ?</a></span>
-            <input class="custom-login-button" type="submit" value="Sign In" onclick="performLogin()">
+    <span class="forgot-password"><a onclick="showForgotPasswordForm()">Forgot Password ?</a></span>
+            <input class="custom-login-button" type="submit" value="Sign In" >
         </form>
         <div class="custom-social-account-container">
             <span class="title">Do not have an account! Sign up with:</span>
@@ -51,35 +48,33 @@ function showLoginForm() {
 
 // Function to show the login form
 function showRegisterForm() {
-    const RegisterFormContent = `
-    <div class="custom-container">
-        <div class="custom-heading">Sign Up</div>
-      <p class="custom-p">Signup now and get full access to our app. </p>
-        <form action="" class="custom-form">
-        <input required class="custom-input" type="text" name="email" id="name" placeholder="Name">
-            <input required class="custom-input" type="email" name="email" id="email" placeholder="E-mail">
-            <input required class="custom-input" type="password" name="password" id="password" placeholder="Password">
-            <input class="custom-input" type="password" placeholder="Confirm Password" id="confirmPassword" required>
-            <div class="checkbox-wrapper-65">
+    const RegisterFormContent = `<div class="custom-container">
+    <div class="custom-heading">Sign Up</div>
+    <p class="custom-p">Signup now and get full access to our app.</p>
+    <form action="register.php" method="POST" class="custom-form" >
+        <input required class="custom-input" type="text" id="UserName" name="UserName" placeholder="Name">
+        <input required class="custom-input" type="email" id="email" name="email"  placeholder="E-mail">
+        <input required class="custom-input" type="password" id="password" name="password"  placeholder="Password">
+        <div class="checkbox-wrapper-65">
             <label for="cbk1-65">
-              <input id="cbk1-65" type="checkbox">
-              <span class="cbx">
-                <svg viewBox="0 0 12 11" height="11px" width="12px">
-                  <polyline points="1 6.29411765 4.5 10 11 1"></polyline>
-                </svg>
-              </span>
-              <span>you agree on our Privacy Policy for montaza site</span>
+                <input id="cbk1-65" required type="checkbox" name="agreePrivacyPolicy" value="1">
+                <span class="cbx">
+                    <svg viewBox="0 0 12 11" height="11px" width="12px">
+                        <polyline points="1 6.29411765 4.5 10 11 1"></polyline>
+                    </svg>
+                </span>
+                <span>You agree to our Privacy Policy for montaza site</span>
             </label>
-          </div>   
-          <input class="custom-login-button" type="submit" value="Sign Up" onclick="performRegister()">
-        </form>
-        <div class="custom-social-account-container">
-            <span class="title">Do you have an account! Sign in with:</span>
-            <input class="custom-register-button" type="submit" value="Sign In" onclick="showLoginForm()">
-            <input class="custom-social-button" type="submit" value="Cancel" onclick="closeDialog()">
         </div>
+        <input class="custom-login-button" type="submit" value="Sign Up" >
+    </form>
+    <div class="custom-social-account-container">
+        <span class="title">Do you have an account! Sign in with:</span>
+        <input class="custom-register-button" type="submit" value="Sign In" onclick="showLoginForm()">
+        <input class="custom-social-button" type="submit" value="Cancel" onclick="closeDialog()">
     </div>
-    `;
+</div>
+`;
 
     showDialog(RegisterFormContent);
 }
@@ -161,20 +156,6 @@ function showChangePasswordForm() {
     showDialog(changePasswordFormContent);
 }
 
-// Function to handle login (simulated)
-function performLogin() {
-    // Your login logic here (simulate success for demo)
-    alert('Login successful!');
-    closeDialog(); // Close dialog on successful login
-}
-
-// Function to handle login (simulated)
-function performRegister() {
-    // Your login logic here (simulate success for demo)
-    alert('Register successful!');
-    closeDialog(); // Close dialog on successful login
-    showLoginForm();
-}
 
 // Function to handle changing password (simulated)
 function changePassword() {
@@ -190,3 +171,4 @@ function changePassword() {
     alert('Password changed successfully!');
     closeDialog(); // Close dialog on successful password change
 }
+
