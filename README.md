@@ -49,7 +49,7 @@ Montazah Palace, located in Alexandria, Egypt, is a symbol of elegance and grand
 
 ## 📝 License
 
-This project is licensed under the [License Name] License. See the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [License Name] License. See the [LICENSE](LICENSE) file for details.
 
 ## 💌 Contact Us
 
